@@ -1,0 +1,14 @@
+:root {
+	--color-primary: #af0000;
+	--color-dark: #00000f;
+}
+
+body {
+	color: var(--color-dark, #0000a0);
+}
+
+h1,
+h2,
+h3 {
+	color: #af0000;
+}
