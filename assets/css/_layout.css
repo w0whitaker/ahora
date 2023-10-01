@@ -58,6 +58,51 @@
   --space-s-l: clamp(1.125rem, 0.5598rem + 2.8261vw, 2.75rem);
 }
 
+* {
+	max-inline-size: 60ch;
+}
+
+html,
+body,
+div {
+max-inline-size: none;
+}
+
+body {
+	padding-inline-start: 4ch;
+	padding-inline-end: 2ch;
+	padding-block-start: 4em;
+	padding-block-end: 8em;
+}
+
+body > *:not(.skip-link) + *:not(.skip-link) {
+	margin-block-start: var(--space-m);
+}
+
+a.skip-link {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 4px;
+	width: 1rem;
+	transform-origin: bottom left;
+	transform: rotate(90deg);
+}
+
+a.skip-link:focus {
+	top: 0;
+	left: 0;
+	transform: rotate(0deg);
+	height: 4rem;
+	width: 100%;
+	padding-block: var(--space-xs);
+	text-align: center;
+}
+
+.container > * + * {
+	margin-block-start: var(--space-xs);
+}
+
 a svg {
 	width: 0.875em;
 }

@@ -1,0 +1,4 @@
+a.skip-link {
+	border: 2px solid var(--color-primary, crimson);
+	text-decoration: none;
+}

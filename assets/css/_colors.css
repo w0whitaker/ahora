@@ -1,14 +1,20 @@
 :root {
 	--color-primary: #af0000;
+	--color-secondary: #fff0fb;
 	--color-dark: #00000f;
 }
 
 body {
-	color: var(--color-dark, #0000a0);
+	background-color: var(--color-secondary, mistyrose);
+	color: var(--color-dark, black);
 }
 
 h1,
 h2,
 h3 {
-	color: #af0000;
+	color: var(--color-primary, crimson);
+}
+
+a.skip-link {
+	color: var(--color-primary, crimson);
 }
