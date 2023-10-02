@@ -111,10 +111,8 @@ a svg {
 
 nav ul {
 	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-xs);
 	margin: 0;
 	padding: 0;
-}
-
-nav ul > * + * {
-	margin-inline-start: var(--space-s);
 }
