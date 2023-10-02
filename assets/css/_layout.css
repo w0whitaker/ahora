@@ -108,3 +108,13 @@ a.skip-link:focus {
 a svg {
 	width: 0.875em;
 }
+
+nav ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul > * + * {
+	margin-inline-start: var(--space-s);
+}
