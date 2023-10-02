@@ -5,4 +5,5 @@ a.skip-link {
 
 a.skip-link:focus {
 	border: none;
+	outline: var(--color-primary, crimson) solid 2px;
 }

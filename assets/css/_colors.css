@@ -16,5 +16,5 @@ h3 {
 }
 
 a.skip-link {
-	color: var(--color-primary, crimson);
+	color: blue;
 }
