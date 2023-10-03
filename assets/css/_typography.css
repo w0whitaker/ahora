@@ -61,3 +61,9 @@ header p,
 header a:not(p > a) {
 	font-size: 0.5em;
 }
+
+header .container > p,
+header .container > a {
+	text-transform: lowercase;
+}
+
