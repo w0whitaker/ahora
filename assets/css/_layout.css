@@ -56,6 +56,9 @@
   /* Custom pairs */
   /* Space s-l: 18px → 44px */
   --space-s-l: clamp(1.125rem, 0.5598rem + 2.8261vw, 2.75rem);
+
+	/* Space xs-3xl: 14px → 132px */
+  --space-xs-3xl: clamp(0.875rem, -1.6902rem + 12.8261vw, 8.25rem);
 }
 
 * {
@@ -103,7 +106,7 @@ a.skip-link:focus {
 header .container {
 	display: flex;
 	flex-wrap: wrap;
-	gap: var(--space-xs);
+	gap: var(--space-s-l);
 	align-items: last baseline;
 }
 
