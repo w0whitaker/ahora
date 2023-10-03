@@ -113,7 +113,6 @@ header .container {
 header .container > * {
 	flex-grow: 1;
 	flex-basis: calc((40rem - 100%) * 999);
-	align-items: last baseline;
 }
 
 a svg {
