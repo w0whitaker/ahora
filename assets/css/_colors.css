@@ -18,3 +18,19 @@ h3 {
 a.skip-link {
 	color: blue;
 }
+
+header > .container > *:nth-child(1) {
+	background-color: springgreen;
+}
+
+header > .container > *:nth-child(2) {
+	background-color: dodgerblue;
+}
+
+header > .container > *:nth-child(3) {
+	background-color: gold;
+}
+
+header > .container > *:nth-child(4) {
+	background-color: chocolate;
+}

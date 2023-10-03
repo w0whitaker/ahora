@@ -69,8 +69,7 @@ max-inline-size: none;
 }
 
 body {
-	padding-inline-start: 4ch;
-	padding-inline-end: 2ch;
+	padding-inline: 4ch;
 	padding-block-start: 4em;
 	padding-block-end: 8em;
 }
@@ -101,8 +100,17 @@ a.skip-link:focus {
 	border-bottom-right-radius: 16px;
 }
 
-.container > * + * {
-	margin-block-start: var(--space-xs);
+header .container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-xs);
+	align-items: last baseline;
+}
+
+header .container > * {
+	flex-grow: 1;
+	flex-basis: calc((40rem - 100%) * 999);
+	align-items: last baseline;
 }
 
 a svg {
