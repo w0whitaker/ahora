@@ -106,13 +106,24 @@ a.skip-link:focus {
 header .container {
 	display: flex;
 	flex-wrap: wrap;
-	gap: var(--space-s-l);
+	gap: var(--space-xs);
 	align-items: last baseline;
+	container-type: inline-size;
 }
 
 header .container > * {
 	flex-grow: 1;
-	flex-basis: calc((20rem - 100%) * 999);
+	/* flex-basis: calc((20rem - 100%) * 999); */
+}
+
+header .container > h1 {
+	max-width: min-content;
+}
+
+@container (min-width: 24.75rem) {
+	header .container > h2 {
+		color: red;
+	}
 }
 
 a svg {
