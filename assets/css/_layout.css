@@ -72,7 +72,7 @@ max-inline-size: none;
 }
 
 body {
-	padding-inline: 4ch;
+	padding-inline: 2ch;
 	padding-block-start: 4em;
 	padding-block-end: 8em;
 }
@@ -141,4 +141,8 @@ nav ul {
 	gap: var(--space-xs);
 	margin: 0;
 	padding: 0;
+}
+
+p {
+	text-indent: 3ch;
 }

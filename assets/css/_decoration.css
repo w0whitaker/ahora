@@ -22,7 +22,7 @@ main article section {
 
 main article section p::before {
 	position: absolute;
-	left: -3ch;
+	left: -2ch;
 	counter-increment: section;
 	content: counter(section);
 	font-weight: bold;
