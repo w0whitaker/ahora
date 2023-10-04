@@ -115,6 +115,14 @@ a.skip-link:focus {
 	margin: 1rem;
 }
 
+div.container > * + * {
+	margin-block-start: var(--space-m);
+}
+
+section.container > * + * {
+	margin-block-start: var(--space-xs);
+}
+
 header .container {
 	align-items: last baseline;
 }
