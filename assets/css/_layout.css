@@ -106,13 +106,32 @@ a.skip-link:focus {
 .container {
 	display: flex;
 	flex-wrap: wrap;
-	margin: calc(0 - var(--space-3xs));
 }
 
 .container > * {
 	flex-grow: 1;
 	flex-basis: calc((20rem - 100%) * 999);
-	margin: var(--space-3xs);
+}
+
+div.container {
+	margin: calc(0 - var(--space-xs));
+	background-color: gainsboro;
+}
+
+div.container > * {
+	background-color: dodgerblue;
+	margin: var(--space-xs);
+}
+
+section.container {
+	background-color: seashell;
+}
+
+section.container > * {
+	background-color: rosybrown;
+	margin-block: var(--space-l);
+	margin-inline: var(--space-2xl);
+	width: 100%;
 }
 
 div.container > * + * {
@@ -120,7 +139,7 @@ div.container > * + * {
 }
 
 section.container > * + * {
-	margin-block-start: var(--space-xs);
+	margin-block-start: var(--space-2xs);
 }
 
 header .container {
