@@ -115,11 +115,18 @@ a.skip-link:focus {
 }
 
 div.container {
-	margin: calc(0 - var(--space-xs));
+	margin-block: calc(0 - var(--space-xs));
+	gap: var(--space-xs-3xl);
+	background-color: deeppink;
 }
 
 div.container > * {
-	margin: var(--space-xs);
+	background-color: dodgerblue;
+}
+
+div.container h1,
+div.container h2 {
+	flex-basis: 100%;
 }
 
 section.container {
@@ -129,10 +136,6 @@ section.container {
 section.container > * {
 	background-color: snow;
 	margin-block: var(--space-l);
-}
-
-div.container > * + * {
-	margin-block-start: var(--space-3xs);
 }
 
 section.container > * + * {
@@ -157,8 +160,4 @@ nav ul {
 	gap: var(--space-xs);
 	margin: 0;
 	padding: 0;
-}
-
-p {
-	text-indent: 3ch;
 }
