@@ -116,25 +116,23 @@ a.skip-link:focus {
 
 div.container {
 	margin: calc(0 - var(--space-xs));
-	background-color: gainsboro;
 }
 
 div.container > * {
-	background-color: dodgerblue;
 	margin: var(--space-xs);
 }
 
 section.container {
-	background-color: seashell;
+	background-color: sienna;
 }
 
 section.container > * {
-	background-color: rosybrown;
+	background-color: snow;
 	margin-block: var(--space-l);
 }
 
 div.container > * + * {
-	margin-block-start: var(--space-m);
+	margin-block-start: var(--space-3xs);
 }
 
 section.container > * + * {
