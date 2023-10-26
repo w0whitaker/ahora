@@ -3,3 +3,12 @@
 @import url(assets/css/_layout.css);
 /* @import url(assets/css/_colors.css); */
 @import url(assets/css/_decoration.css);
+
+/* development overrides */
+body {
+	background-color: brown;
+}
+
+.container {
+	background-color: chartreuse;
+}

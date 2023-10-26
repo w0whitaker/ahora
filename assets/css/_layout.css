@@ -73,7 +73,6 @@ max-inline-size: none;
 }
 
 body {
-	padding-inline: var(--space-xs-3xl);
 	padding-block-start: var(--space-l-xl);
 	padding-block-end: var(--space-2xl-3xl);
 }
@@ -107,21 +106,18 @@ a.skip-link:focus {
 .container {
 	display: flex;
 	flex-wrap: wrap;
+	/* flex-direction: column; */
 }
 
 .container > * {
+	padding-inline: var(--space-xs);
 	flex-grow: 1;
 	flex-basis: calc((20rem - 100%) * 999);
 }
 
 div.container {
 	margin-block: calc(0 - var(--space-xs));
-	gap: var(--space-xs-3xl);
-	background-color: deeppink;
-}
-
-div.container > * {
-	background-color: dodgerblue;
+	gap: var(--space-xs);
 }
 
 div.container h1,
@@ -129,21 +125,12 @@ div.container h2 {
 	flex-basis: 100%;
 }
 
-section.container {
-	background-color: sienna;
-}
-
 section.container > * {
-	background-color: snow;
 	margin-block: var(--space-l);
 }
 
 section.container > * + * {
 	margin-block-start: var(--space-2xs);
-}
-
-header .container {
-	align-items: last baseline;
 }
 
 header .container > h2 {
