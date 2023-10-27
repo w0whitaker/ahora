@@ -46,14 +46,13 @@ a.skip-link {
 
 header {
 	font-size: var(--step-3);
+	text-align: center;
 }
 
 header h1 {
 	font-size: 4em;
-	text-align: center;
 }
 
-header h2,
 header p,
 header a:not(p > a) {
 	font-size: 0.5em;
@@ -63,4 +62,8 @@ header .container > p,
 header .container > a {
 	text-transform: lowercase;
 	font-size: var(--step--1);
+}
+
+header .container > h2 {
+	color: red;
 }

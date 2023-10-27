@@ -5,14 +5,7 @@
 @import url(assets/css/_decoration.css);
 
 /* development overrides */
-body {
-	background-color: brown;
-}
 
-.container {
-	background-color: chartreuse;
-}
-
-.container h1 {
-	background-color: white;
+body > *:not(header) {
+	color: snow;
 }
