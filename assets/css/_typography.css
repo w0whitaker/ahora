@@ -28,6 +28,7 @@ a.skip-link {
 
 header {
 	font-size: var(--step-3);
+	text-align: center;
 }
 
 header h1 {

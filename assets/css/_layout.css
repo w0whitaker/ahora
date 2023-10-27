@@ -141,6 +141,10 @@ header {
 	padding-inline: var(--space-2xs);
 }
 
+header a {
+	margin-inline: auto;
+}
+
 a svg {
 	width: 0.5em;
 }
