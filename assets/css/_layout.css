@@ -103,6 +103,7 @@ a.skip-link:focus {
 	border-bottom-right-radius: 16px;
 }
 
+.container {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
