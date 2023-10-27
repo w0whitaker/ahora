@@ -46,7 +46,6 @@ a.skip-link {
 
 header {
 	font-size: var(--step-3);
-	text-align: center;
 }
 
 header h1 {
@@ -61,7 +60,6 @@ header a:not(p > a) {
 header .container > p,
 header .container > a {
 	text-transform: lowercase;
-	font-size: var(--step--1);
 }
 
 header .container > h2 {
