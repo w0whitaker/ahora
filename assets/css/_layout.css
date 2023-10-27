@@ -103,6 +103,26 @@ a.skip-link:focus {
 	border-bottom-right-radius: 16px;
 }
 
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.container {
+	margin-block: 0;
+}
+
+.container * + * {
+	margin-block-start: var(--space-xs);
+}
+
+.container:only-child {
+	block-size: 100%;
+}
+
+.container > :nth-child(2) {
+	margin-block-end: auto;
+}
 
 div.container {
 	margin-block: calc(0 - var(--space-xs));
@@ -114,6 +134,10 @@ section.container > * {
 
 section.container > * + * {
 	margin-block-start: var(--space-2xs);
+}
+
+header {
+	padding-inline: var(--space-2xs);
 }
 
 a svg {
