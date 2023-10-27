@@ -105,7 +105,7 @@ a.skip-link:focus {
 
 .container {
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
 	justify-content: flex-start;
 }
 
@@ -142,7 +142,7 @@ header {
 }
 
 a svg {
-	width: 0.875em;
+	width: 0.5em;
 }
 
 nav ul {
