@@ -3,3 +3,9 @@
 @import url(assets/css/_layout.css);
 /* @import url(assets/css/_colors.css); */
 @import url(assets/css/_decoration.css);
+
+/* development overrides */
+
+body > *:not(header) {
+	color: snow;
+}

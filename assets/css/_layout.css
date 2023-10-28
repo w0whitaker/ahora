@@ -67,14 +67,14 @@
 
 html,
 body,
+main,
 div {
 max-inline-size: none;
 }
 
 body {
-	padding-inline: 4ch;
-	padding-block-start: 4em;
-	padding-block-end: 8em;
+	padding-block-start: var(--space-l-xl);
+	padding-block-end: var(--space-2xl-3xl);
 }
 
 body > *:not(.skip-link) + *:not(.skip-link) {
@@ -106,25 +106,48 @@ a.skip-link:focus {
 .container {
 	display: flex;
 	flex-wrap: wrap;
-	margin: -1rem;
+	flex-direction: column;
+	justify-content: flex-start;
 }
 
-.container > * {
-	flex-grow: 1;
-	flex-basis: calc((20rem - 100%) * 999);
-	margin: 1rem;
+.container * {
+	margin-block: 0;
 }
 
-header .container {
-	align-items: last baseline;
+.container * + * {
+	margin-block-start: var(--space-xs);
 }
 
-header .container > h2 {
-	color: red;
+.container:only-child {
+	block-size: 100%;
+}
+
+.container > :nth-child(2) {
+	margin-block-end: auto;
+}
+
+div.container {
+	margin-block: calc(0 - var(--space-xs));
+}
+
+section.container > * {
+	margin-block: var(--space-l);
+}
+
+section.container > * + * {
+	margin-block-start: var(--space-2xs);
+}
+
+header {
+	padding-inline: var(--space-2xs);
+}
+
+header * {
+	margin-inline: auto;
 }
 
 a svg {
-	width: 0.875em;
+	width: 0.5em;
 }
 
 nav ul {
