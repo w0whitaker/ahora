@@ -138,7 +138,7 @@ section.container > * + * {
 	margin-block-start: var(--space-2xs);
 }
 
-header h2 {
+header {
 	padding-inline: var(--space-2xs);
 }
 
