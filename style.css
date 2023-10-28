@@ -6,6 +6,6 @@
 
 /* development overrides */
 
-body > *:not(header) {
+body > main {
 	color: snow;
 }

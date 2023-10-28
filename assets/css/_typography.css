@@ -32,6 +32,10 @@ header {
 	font-size: var(--step-3);
 }
 
+nav {
+	font-size: var(--step-2);
+}
+
 header h1 {
  	font-size: 4em;
 }

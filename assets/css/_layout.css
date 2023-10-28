@@ -150,10 +150,32 @@ a svg {
 	width: 0.5em;
 }
 
-nav ul {
+nav {
+	padding-inline: var(--space-m);
+	box-shadow: inset 0.25em 0 0 0 red;
+}
+
+nav > ul > li {
+	display: inline-block;
+	padding-inline: var(--space-xs);
+	padding-block: var(--space-l);
+	text-align: center;
+}
+
+nav > ul {
 	display: flex;
 	flex-wrap: wrap;
-	gap: var(--space-xs);
-	margin: 0;
 	padding: 0;
+}
+
+nav > ul > li {
+	flex: 1 1 calc(100% / 3);
+}
+
+@supports (width: min(150px, 100%)) {
+	nav > ul {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+		justify-content: center;
+	}
 }
