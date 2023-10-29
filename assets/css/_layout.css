@@ -108,6 +108,7 @@ a.skip-link:focus {
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: flex-start;
+	align-items: center;
 }
 
 .container * {
@@ -142,8 +143,8 @@ header {
 	padding-inline: var(--space-2xs);
 }
 
-header * {
-	margin-inline: auto;
+header .container > *  {
+	max-inline-size: min(28em, 100%);
 }
 
 a svg {
@@ -174,7 +175,7 @@ nav > ul > li {
 @supports (width: min(150px, 100%)) {
 	nav > ul {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+		grid-template-columns: repeat(2, minmax(7em, 12em));
 		justify-content: center;
 	}
 }
