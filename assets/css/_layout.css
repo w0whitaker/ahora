@@ -64,14 +64,12 @@
 
 html,
 body,
-main,
-div {
+main {
 	max-inline-size: none;
 }
 
 body {
-	padding-block-start: var(--space-l-xl);
-	padding-block-end: var(--space-2xl-3xl);
+	padding-block-start: var(--space-l);
 }
 
 body > *:not(.skip-link) + *:not(.skip-link) {
