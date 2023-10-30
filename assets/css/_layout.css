@@ -134,8 +134,9 @@ section.container > * + * {
 	margin-block-start: var(--space-2xs);
 }
 
-header {
-	padding-inline: var(--space-2xs);
+header h2,
+header p {
+	padding-inline: var(--space-m);
 }
 
 header .container > * {
